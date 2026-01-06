@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "WA Bridge Extension",
+  "version": "1.0",
+  "description": "Menghubungkan WA Bridge Dashboard ke WhatsApp Web.",
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": ["https://web.whatsapp.com/*"],
+  "externally_connectable": {
+    "matches": [
+      "http://localhost:*/*",
+      "https://*.vercel.app/*",
+      "https://frontendd.peachy.icu/*"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
