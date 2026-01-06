@@ -9,7 +9,7 @@
     "matches": [
       "http://localhost:*/*",
       "https://*.vercel.app/*",
-      "https://frontendd.peachy.icu/*"
+      "https://fuuu.peachy.icu/*"
     ]
   },
   "background": {
@@ -22,3 +22,4 @@
     }
   ]
 }
+
